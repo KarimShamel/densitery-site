@@ -152,7 +152,7 @@ setInterval(createHeart, 350);
 // PHOTO CLICK TO ENLARGE
 // ================================
 
-const photos = document.querySelectorAll(".photo img");
+const photos = document.querySelectorAll(".photo img:not(.ignore)");
 
 photos.forEach(photo => {
 
