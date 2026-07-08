@@ -974,7 +974,14 @@ color:white;
     object-fit:cover;
 }
 
-/* ======================================================
-MOBILE PHONES
-====================================================== */
+.gallery,
+.galleryGrid,
+.photo,
+.photo img,
+.video-card video{
+
+    position:relative;
+    z-index:50;
+
+}
 
