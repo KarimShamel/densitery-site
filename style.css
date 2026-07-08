@@ -971,3 +971,16 @@ background:#ff8fc7;
 color:white;
 
 }
+.video-card video{
+    width:100%;
+    display:block;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    border-radius:30px;
+    background:#000;
+}
+
+.video-card:hover video{
+    transform:scale(1.03);
+    transition:.5s;
+}
