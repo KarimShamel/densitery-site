@@ -984,3 +984,244 @@ color:white;
     transform:scale(1.03);
     transition:.5s;
 }
+
+/* ======================================================
+MOBILE PHONES
+====================================================== */
+
+@media screen and (max-width:768px){
+
+body{
+    overflow-x:hidden;
+}
+
+/* Hero */
+
+.hero{
+    height:100vh;
+}
+
+.heroOverlay{
+    padding:20px;
+}
+
+.heroOverlay h1{
+    font-size:52px;
+    line-height:1.1;
+}
+
+.heroOverlay h2{
+    font-size:24px;
+}
+
+.heroOverlay p{
+    font-size:17px;
+    line-height:1.7;
+    max-width:95%;
+}
+
+/* Curtain */
+
+.giftBox{
+    width:90%;
+}
+
+.giftBox h1{
+    font-size:60px;
+}
+
+.giftBox h2{
+    font-size:38px;
+}
+
+.giftBox h3{
+    font-size:18px;
+}
+
+#openCurtain{
+    width:100%;
+    max-width:280px;
+    font-size:17px;
+    padding:16px;
+}
+
+/* Letter */
+
+.letter{
+    padding:70px 20px;
+}
+
+.letter h2{
+    font-size:48px;
+}
+
+.letterBox{
+    padding:28px 22px;
+    border-radius:22px;
+}
+
+.letterBox p{
+    font-size:17px;
+    line-height:1.9;
+    text-align:left;
+}
+
+.letterBox h3{
+    font-size:24px;
+    line-height:1.6;
+}
+
+/* Journey */
+
+.journey-text{
+    margin-bottom:45px;
+}
+
+.journey-text h2{
+    font-size:48px;
+}
+
+.journey-text p{
+    font-size:17px;
+    line-height:1.9;
+    padding:0 5px;
+}
+
+/* Gallery */
+
+.gallery{
+    padding:70px 20px;
+}
+.journey-text{
+
+    max-width:900px;
+    margin:0 auto 70px;
+    text-align:center;
+
+}
+
+.journey-text h2{
+
+    font-family:'Great Vibes',cursive;
+    font-size:70px;
+    color:#ff4f93;
+    margin-bottom:25px;
+
+}
+
+.journey-text p{
+
+    font-size:22px;
+    line-height:2;
+    color:#555;
+
+}
+.galleryGrid{
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+.photo{
+    border-radius:20px;
+}
+
+.photo img,
+.video-card video{
+    aspect-ratio:4/5;
+}
+
+/* Ending */
+
+.ending{
+    padding:80px 20px;
+}
+
+.ending h1{
+    font-size:52px;
+}
+
+.ending h2{
+    font-size:24px;
+}
+
+.ending p{
+    font-size:17px;
+    line-height:1.8;
+}
+
+.ending h3{
+    font-size:32px;
+}
+
+.heart{
+    font-size:60px;
+}
+
+/* Music Button */
+
+#musicBtn{
+    width:55px;
+    height:55px;
+    right:15px;
+    bottom:15px;
+    font-size:22px;
+}
+
+}
+
+/* ======================================================
+SMALL PHONES
+====================================================== */
+
+@media screen and (max-width:480px){
+
+.heroOverlay h1{
+    font-size:42px;
+}
+
+.heroOverlay h2{
+    font-size:20px;
+}
+
+.heroOverlay p{
+    font-size:15px;
+}
+
+.giftBox h1{
+    font-size:52px;
+}
+
+.giftBox h2{
+    font-size:32px;
+}
+
+.giftBox h3{
+    font-size:16px;
+}
+
+#openCurtain{
+    font-size:16px;
+    padding:14px;
+}
+
+.letter h2{
+    font-size:42px;
+}
+
+.journey-text h2{
+    font-size:42px;
+}
+
+.ending h1{
+    font-size:44px;
+}
+
+.ending h2{
+    font-size:22px;
+}
+
+.ending h3{
+    font-size:28px;
+}
+
+}
