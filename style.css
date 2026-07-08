@@ -313,16 +313,12 @@ PHOTO GALLERY
 }
 
 .photo{
-
+    position:relative;
+    z-index:20;
     border-radius:30px;
-
     overflow:hidden;
-
     background:white;
-
     box-shadow:0 18px 45px rgba(0,0,0,.12);
-
-    transition:.45s;
 }
 
 .photo:hover{
@@ -337,9 +333,18 @@ PHOTO GALLERY
     height:350px;
     display:block;
     object-fit:cover;
-    transition:.6s;
-    opacity:1;
-    visibility:visible;
+
+    opacity:1 !important;
+    visibility:visible !important;
+
+    position:relative;
+    z-index:21;
+
+    -webkit-transform:translateZ(0);
+    transform:translateZ(0);
+
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
 }
 
 .photo:hover img{
@@ -572,12 +577,6 @@ PHOTO EFFECT
 .photo:hover::after{
 
     opacity:1;
-
-}
-
-.photo img{
-
-    cursor:pointer;
 
 }
 
@@ -944,18 +943,9 @@ SMOOTH IMAGE LOADING
 ====================================================== */
 
 img{
-
-max-width:100%;
-display:block;
-
-transition:.5s;
-
-}
-
-img:hover{
-
-filter:brightness(1.03);
-
+    display:block;
+    max-width:100%;
+    height:auto;
 }
 
 /* ======================================================
@@ -987,184 +977,4 @@ color:white;
 /* ======================================================
 MOBILE PHONES
 ====================================================== */
-
-@media screen and (max-width:768px){
-
-body{
-    overflow-x:hidden;
-}
-
-/* Hero */
-
-.hero{
-    height:100vh;
-}
-
-.heroOverlay{
-    padding:20px;
-}
-
-.heroOverlay h1{
-    font-size:52px;
-    line-height:1.1;
-}
-
-.heroOverlay h2{
-    font-size:24px;
-}
-
-.heroOverlay p{
-    font-size:17px;
-    line-height:1.7;
-    max-width:95%;
-}
-
-/* Curtain */
-
-.giftBox{
-    width:90%;
-}
-
-.giftBox h1{
-    font-size:60px;
-}
-
-.giftBox h2{
-    font-size:38px;
-}
-
-.giftBox h3{
-    font-size:18px;
-}
-
-#openCurtain{
-    width:100%;
-    max-width:280px;
-    font-size:17px;
-    padding:16px;
-}
-
-/* Letter */
-
-.letter{
-    padding:70px 20px;
-}
-
-.letter h2{
-    font-size:48px;
-}
-
-.letterBox{
-    padding:28px 22px;
-    border-radius:22px;
-}
-
-.letterBox p{
-    font-size:17px;
-    line-height:1.9;
-    text-align:left;
-}
-
-.letterBox h3{
-    font-size:24px;
-    line-height:1.6;
-}
-
-/* Journey */
-
-.journey-text{
-    margin-bottom:45px;
-}
-
-.journey-text h2{
-    font-size:48px;
-}
-
-.journey-text p{
-    font-size:17px;
-    line-height:1.9;
-    padding:0 5px;
-}
-
-/* Gallery */
-
-.gallery{
-    padding:70px 20px;
-}
-.journey-text{
-
-    max-width:900px;
-    margin:0 auto 70px;
-    text-align:center;
-
-}
-
-.journey-text h2{
-
-    font-family:'Great Vibes',cursive;
-    font-size:70px;
-    color:#ff4f93;
-    margin-bottom:25px;
-
-}
-
-.journey-text p{
-
-    font-size:22px;
-    line-height:2;
-    color:#555;
-
-}
-.galleryGrid{
-    grid-template-columns:1fr;
-    gap:20px;
-}
-
-.photo{
-    border-radius:20px;
-}
-
-.photo img,
-.video-card video{
-    aspect-ratio:4/5;
-}
-
-/* Ending */
-
-.ending{
-    padding:80px 20px;
-}
-
-.ending h1{
-    font-size:52px;
-}
-
-.ending h2{
-    font-size:24px;
-}
-
-.ending p{
-    font-size:17px;
-    line-height:1.8;
-}
-
-.ending h3{
-    font-size:32px;
-}
-
-.heart{
-    font-size:60px;
-}
-
-/* Music Button */
-
-#musicBtn{
-    width:55px;
-    height:55px;
-    right:15px;
-    bottom:15px;
-    font-size:22px;
-}
-
-}
 
