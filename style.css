@@ -103,7 +103,21 @@ section{
 /*=====================
 SCROLL INDICATOR
 ======================*/
+.makeup-line{
+    font-family:'Allura', cursive;
+    font-size:72px;
+    color:#ff4f93;
+    text-align:center;
+    margin-top:60px;
+    line-height:1.4;
+    text-shadow:0 4px 12px rgba(255,79,147,.2);
+}
 
+@media(max-width:768px){
+    .makeup-line{
+        font-size:48px;
+    }
+}
 .scroll-indicator{
 
     position:absolute;
@@ -341,10 +355,6 @@ CURTAINS
 
     transform:translateX(105%);
 
-}
-
-.makeup-line{
-    font-family:'Parisienne', cursive;
 }
 
 /*=====================
